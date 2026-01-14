@@ -103,3 +103,11 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+.book-cover {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
