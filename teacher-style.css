@@ -19,6 +19,8 @@ body {
 
 h1 {
     font-size: 36px;
+
+    
     color: #155b2f;
     margin-bottom: 10px;
 }
@@ -54,3 +56,26 @@ footer {
     font-size: 14px;
     color: #666;
 }
+.downloads {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #1f6f3d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.download-button:hover {
+    background: #155829;
+}
+
