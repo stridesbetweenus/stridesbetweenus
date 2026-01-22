@@ -1,5 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
 
-body { font-family: Arial; padding: 20px; }
-.banner { width: 100%; }
-.downloads { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px;}
-.downloads img { width: 120px; }
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #155b2f;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.downloads {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.downloads div {
+    text-align: center;
+    font-size: 16px;
+}
+
+.downloads img {
+    width: 60px;
+    margin-bottom: 12px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
