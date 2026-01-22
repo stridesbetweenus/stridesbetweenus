@@ -1,11 +1,5 @@
-body {font-family: Arial, sans-serif; background:#f9fafc; margin:0; color:#222;}
-.header {text-align:center; padding:60px 20px; background:#eef2ff;}
-.header h1 {margin:0; font-size:2.5rem;}
-.tagline {color:#555;}
-.section {max-width:800px; margin:40px auto; padding:20px;}
-.section h2 {border-bottom:2px solid #ccd6ff; padding-bottom:8px;}
-.section ul {line-height:1.6;}
-.downloads {text-align:center;}
-.button {display:inline-block; margin:10px; padding:12px 22px; background:#3954ff; color:white; text-decoration:none; border-radius:6px;}
-.button.secondary {background:white; color:#3954ff; border:2px solid #3954ff;}
-.footer {text-align:center; padding:30px; background:#222; color:#ddd; margin-top:40px;}
+
+body { font-family: Arial; padding: 20px; }
+.banner { width: 100%; }
+.downloads { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px;}
+.downloads img { width: 120px; }
