@@ -3,11 +3,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     position: relative;
-    width: 100%;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -22,35 +21,39 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     color: white;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
-}
-
-.hero-overlay h1 {
-    font-size: 64px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
 .subtitle {
     font-size: 22px;
-    margin-bottom: 30px;
-    opacity: 0.95;
+    margin-bottom: 20px;
 }
 
 .hero-button {
-    padding: 14px 22px;
-    background: white;
-    color: #1f6f3d;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 6px;
+    padding: 12px 25px;
+    background: #2a6f2a;
+    color: white;
     font-weight: bold;
-    transition: 0.2s;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.hero-button:hover {
-    background: #1f6f3d;
-    color: white;
+/* SUMMARY SECTION */
+.summary {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.summary h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.summary p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 16px;
 }
