@@ -1,63 +1,9 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+
+body { margin:0; font-family: Arial; background:white; }
+.hero { text-align:center; padding:20px; }
+.hero-img { width:100%; max-width:600px; height:auto; }
+.buttons { display:flex; flex-direction:column; gap:15px; margin-top:20px; }
+.btn { padding:12px 18px; background:#0066cc; color:white; text-decoration:none; border-radius:6px; font-size:18px; }
+@media(min-width:700px){
+  .buttons { flex-direction:row; justify-content:center; }
 }
-
-.hero {
-    position: relative;
-    height: 100vh;
-    background-image: url('images/hero_jake.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    text-shadow: 0 0 10px rgba(0,0,0,0.7);
-}
-
-.subtitle {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.hero-button {
-    padding: 12px 22px;
-    background: #2e7d32;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.summary {
- 
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-}
-
-
-   /* MOBILE FIX — stack buttons neatly and center them */
-@media screen and (max-width: 600px) {
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .hero-button {
-        width: 100%;
-        font-size: 14px;
-        padding: 12px;
-        text-align: center;
-    }
-}
-
