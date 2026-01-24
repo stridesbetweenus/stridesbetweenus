@@ -36,7 +36,14 @@ body {
 }
 
 .summary {
-    /* MOBILE FIX — stack buttons neatly and center them */
+ 
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+   /* MOBILE FIX — stack buttons neatly and center them */
 @media screen and (max-width: 600px) {
     .hero-buttons {
         display: flex;
@@ -54,7 +61,3 @@ body {
     }
 }
 
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-}
