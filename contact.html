@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport">
+
+<!content="width=device-width, initial-scale=1.0">
     <title>Contact - Strides Between Us</title>
     <link rel="stylesheet" href="style.css">
 
@@ -146,8 +148,12 @@
             classroom requests, or general inquiries. I do my best to respond within 24 hours.
         </p>
 
-        <!-- CONTACT FORM (static email link submission) -->
-        <form class="contact-form" action="mailto:stridesbetweenus@gmail.com" method="POST" enctype="text/plain">
+        <!-- ✔ WORKING CONTACT FORM (FormSubmit) -->
+        <form class="contact-form" action="https://formsubmit.co/stridesbetweenus@gmail.com" method="POST">
+
+            <!-- Disable CAPTCHA for smoother use -->
+            <input type="hidden" name="_captcha" value="false">
+
             <label>Name</label>
             <input type="text" name="Name" required>
 
@@ -162,10 +168,11 @@
 
         <div class="contact-links">
             <a href="mailto:stridesbetweenus@gmail.com">📧 Email: stridesbetweenus@gmail.com</a>
-            <a href="https://www.linkedin.com/in/marc-cianfarani-75852b97/" target="_blank">🔗 Connect on LinkedIn</a>
+            <a href="https://www.linkedin.com/in/marc-cianfarani-75852b97/" target="_blank">
+                🔗 Connect on LinkedIn
+            </a>
         </div>
     </section>
 
 </body>
 </html>
-
