@@ -1,1 +1,171 @@
-conta
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Strides Between Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* TOP NAV BAR */
+        .topnav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* MOBILE NAV */
+        @media (max-width: 700px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            .nav-links a {
+                margin: 0 10px;
+                display: inline-block;
+            }
+        }
+
+        /* CONTACT PAGE STYLING */
+        .contact-section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-section h1 {
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .contact-section p {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-links {
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            margin-right: 20px;
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🔵 NAV BAR -->
+    <nav class="topnav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Strides Between Us</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="teacher-resources.html">Teacher Resources</a>
+                <a href="author.html">Author</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <h1>Contact</h1>
+        <p>
+            Educators, students, and readers are welcome to reach out with questions,
+            classroom requests, or general inquiries. I do my best to respond within 24 hours.
+        </p>
+
+        <!-- CONTACT FORM (static email link submission) -->
+        <form class="contact-form" action="mailto:stridesbetweenus@gmail.com" method="POST" enctype="text/plain">
+            <label>Name</label>
+            <input type="text" name="Name" required>
+
+            <label>Email</label>
+            <input type="email" name="Email" required>
+
+            <label>Message</label>
+            <textarea name="Message" rows="6" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+            <a href="mailto:stridesbetweenus@gmail.com">📧 Email: stridesbetweenus@gmail.com</a>
+            <a href="https://www.linkedin.com/in/marc-cianfarani-75852b97/" target="_blank">🔗 Connect on LinkedIn</a>
+        </div>
+    </section>
+
+</body>
+</html>
+
