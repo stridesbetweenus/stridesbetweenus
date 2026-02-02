@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strides Between Us — ARC Request</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fdfdfd;
+            color: #333;
+        }
+        .container {
+            max-width: 650px;
+            margin: 60px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            color: #777;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #333;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #111;
+        }
+        p {
+            margin-bottom: 18px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        a {
+            color: #333;
+        }
+        .note {
+            font-size: 15px;
+            background: #fff8dc;
+            padding: 12px;
+            border-left: 4px solid #e0c060;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Request Your ARC</h1>
+    <h2>Advance Reader Copy — Not For Resale</h2>
+
+    <p>
+        Thank you for your interest in <strong>Strides Between Us</strong>.  
+        To receive your complimentary Advance Reader Copy (ARC),  
+        please enter your email below. 
+    </p>
+
+    <div class="note">
+        <strong>Note:</strong><br>
+        The ARC download link will be sent to the email you provide.  
+        Please enter a valid address so you can receive it.
+    </div>
+
+    <p>
+        After submitting, you will be automatically redirected to download  
+        <strong>Strides-arc.pdf</strong>.
+    </p>
+
+    <!-- FORMSTART -->
+    <form action="https://formspree.io/f/maywzrgk" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        
+        <!-- Redirect after submit -->
+        <input type="hidden" name="_redirect" value="https://stridesbetweenus.com/Strides-arc.pdf">
+        
+        <button type="submit">Get ARC</button>
+    </form>
+    <!-- FORMEND -->
+
+    <div class="footer">
+        <p>Questions? Email <a href="mailto:StridesBetweenUs@gmail.com">StridesBetweenUs@gmail.com</a></p>
+        <p><a href="/">← Back to Home</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
