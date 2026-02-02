@@ -1,64 +1,103 @@
 
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Request Your ARC — Strides Between Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request ARC — Strides Between Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #fafafa;
+            padding: 40px;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 6px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 18px;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 35px;
+            text-align: center;
+        }
+        a { color: #444; }
+    </style>
 </head>
 
 <body>
-
 <div class="container">
 
-    <h1>Request Your ARC</h1>
-    <h3>Advance Reader Copy — Not For Resale</h3>
+    <h1 style="text-align:center;">Request Your ARC</h1>
+    <p style="text-align:center; margin-top:-10px;">Advance Reader Copy — Not For Resale</p>
 
     <p>
-        Thank you for your interest in <strong>Strides Between Us</strong>.
+        Thank you for your interest in <strong>Strides Between Us</strong>.  
         To receive your complimentary Advance Reader Copy (ARC), please enter your email below.
     </p>
 
-    <div class="note-box">
-        <strong>Note:</strong><br>
+    <div style="background:#fff6d8; border-left:4px solid #e2c078; padding:12px; margin:20px 0;">
+        <strong>Note:</strong>  
         The ARC download link will be sent to the email you provide.  
         Please enter a valid address so you can receive it.
     </div>
 
-    <p>
-        After submitting, you will be automatically redirected to download  
-        <strong>Strides-arc.pdf</strong>.
-    </p>
+    <p><strong>After submitting, the ARC PDF will automatically open.</strong></p>
 
     <!-- FORM START -->
     <form action="https://formspree.io/f/xkozzovj" method="POST">
-        <input 
-            type="email" 
-            name="email" 
-            placeholder="Enter your email address" 
-            required
-        >
+        <input type="email" name="email" placeholder="Enter your email address" required>
 
-        <!-- Correct redirect line -->
-        <input 
-            type="hidden" 
-            name="_redirect" 
-            value="https://stridesbetweenus.com/Strides-arc.pdf"
-        >
+        <!-- Hidden redirect info for your email logs -->
+        <input type="hidden" name="_redirect" value="https://stridesbetweenus.com/Strides-arc.pdf">
 
         <button type="submit">Get ARC</button>
     </form>
     <!-- FORM END -->
 
     <div class="footer">
-        <p>Questions? Email <a href="mailto:StridesBetweenUs@gmail.com">StridesBetweenUs@gmail.com</a></p>
+        <p>Questions? Email  
+            <a href="mailto:StridesBetweenUs@gmail.com">StridesBetweenUs@gmail.com</a>
+        </p>
         <p><a href="/">← Back to Home</a></p>
     </div>
 
 </div>
 
+<!-- AUTO-OPEN PDF FIX -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function () {
+        // Slight delay to let Formspree receive email
+        setTimeout(function () {
+            window.location.href = "https://stridesbetweenus.com/Strides-arc.pdf";
+        }, 1200); // 1.2 seconds
+    });
+});
+</script>
+
 </body>
 </html>
-     
-  
